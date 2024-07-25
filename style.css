@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Montserrat,"comic sans ms", Arial, sans-serif;
     font-size: large;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('catedral-santiago.jpg');
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center;
     color: white;
     text-align: center;
@@ -51,23 +52,35 @@ main {
     align-items: center;
 }
 
-img#pino {
+img#pino,
+img#foca,
+section#hobbies {
     width: 512px; /* with => con; width => ancho */
-    border-radius: 10px;
 }
 
-button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 1rem 2rem;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 1rem;
+div#gente {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
 
-button:hover {
-    background-color: #0056b3;
+div#gente article {
+    display: flex;
+    flex-direction: column; 
+    align-items: start;
+
+    background-color: rgba(255, 255, 255);
+    color: black;
+}
+
+div#gente article section {
+    margin: 1rem
+}
+
+div#gente img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
 }
 
 footer {

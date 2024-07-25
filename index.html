@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+<elemento atributo="valor" otro="atributo">Contenido</elemento>
+
+head: Metadatos y enlaces a archivos externos (CSS, JavaScript)
+    meta: Metadatos (como el juego de caracteres o la descripción de la página)
+    link: Enlace a un archivo externo (como un archivo CSS)
+    title: Título de la página
+
+body: Contenido visible
+    header: Cabecera
+        h1: Título principal
+        nav: Navegación
+            a: Enlace
+    main: Contenido principal
+        section: Sección
+            h2: Título secundario
+            div: Contenedor
+    footer: Pie de página
+        p: Párrafo
+    script: JavaScript
+
+img: Imagen
+    alt: Texto alternativo (para personas con discapacidad visual)
+    id: Identificador (para CSS o JavaScript)
+a: Enlace
+    href: URL a la que lleva el enlace
+    target="_blank": Abre la URL en una nueva pestaña
+h1: Título principal (nivel 1)
+h2: Título secundario (nivel 2)
+h3: Título terciario (nivel 3)
+p: Párrafo
+nav: Navegación
+section: Sección
+
+header: Cabecera
+main: Contenido principal
+footer: Pie de página
+-->
+
+<!-- Metadatos para el navegador (UTF-8, que se vea bien en movil, título en la pestaña...)-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Pinos</title>
+    <link rel="stylesheet" href="/style.css"><!-- Diseño -->
+</head>
+
+<!-- Lo que se ve -->
+
+<body>
+    <!-- Cabecera -->
+    <header>
+        <h1>Charters Pinosos</h1>
+        <nav>
+            <a href="#home">Inicio</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Nosotros</a>
+            <a href="https://maps.app.goo.gl/PVRk8Ki3eNvv6tZJ8" target="_blank">Contacto</a>
+            <a href="#Mesto" target="_blank" >Mesto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="product">
+            <h2>Nuestros Pinos</h2>
+            <div class="product-container">
+                <img src="Pinoa150.jpg" alt="Pino" id="pino">
+                <p>
+                    Ofrecemos los mejores pinos para tu hogar. Compra ahora y disfruta de un árbol hermoso y saludable.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Venta de Pinos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="/script.js"></script><!-- Lógica -->
+</body>
+
+</html>

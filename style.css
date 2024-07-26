@@ -1,5 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Asegúrate de que las imágenes llenen el contenedor sin bordes o márgenes adicionales */
+article {
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: inline-block;
+}
+
+article img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajustar el contenedor principal para eliminar márgenes adicionales */
+#gente {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+article section {
+    text-align: center;
+    margin-top: 10px;
+}
+
 body {
     font-family: Montserrat,"comic sans ms", Arial, sans-serif;
     font-size: large;

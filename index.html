@@ -12,9 +12,17 @@
             background-size: cover;
             background-position: center;
         }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
     </style>
 </head>
-<body>
+<body onclick="showMessage()">
     <!-- Cabecera -->
     <header>
         <h1>El Rincón del Perro Vigués🐶</h1>
@@ -23,17 +31,16 @@
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Nosotros</a>
             <a href="https://maps.app.goo.gl/PVRk8Ki3eNvv6tZJ8" target="_blank">Contacto</a>
             <a href="https://www.aviationcorner.net/gallery.asp?photographer_id=8469">Mis fotos en AC</a>
-            <a href="https://www.airplane-pictures.net/photographer.php?p=18334" >Mis fotos en AP</a>
-
+            <a href="https://www.airplane-pictures.net/photographer.php?p=18334">Mis fotos en AP</a>
         </nav>
     </header>
-    
+
     <main>
-        <h2>Peña</h2>
+        <h2> Los 11 de siempre y Mesto</h2>
         <div id="gente">
             <article>
                 <a id="pino" href="pino.html">
-                    <img src="imagenes/Pinoa150.jpg" alt="ino">
+                    <img src="imagenes/Pinoa150.jpg" alt="Pino">
                 </a>
                 <section>
                     <h3>Pino</h3>
@@ -63,10 +70,10 @@
 
             <article>
                 <a href="yeary.html">
-                    <img src="imagenes/yeary.png" alt="yeray">
+                    <img src="imagenes/yeary.png" alt="Yeray">
                 </a>
                 <section>
-                    <h3>yeray</h3>
+                    <h3>Yeray</h3>
                     <a href="yeary.html"></a>
                 </section>
             </article>
@@ -83,11 +90,11 @@
 
             <article>
                 <a href="gorgo.html">
-                    <img src="imagenes/gorgo.png" alt="gorgo">
+                    <img src="imagenes/gorgo.png" alt="Gorgo">
                 </a>
                 <section>
                     <h3>Gorgo</h3>
-                    <a href="gorgo.png"></a>
+                    <a href="gorgo.html"></a>
                 </section>
             </article>
         </div>
@@ -148,14 +155,16 @@
             const audio = new Audio(sonidosFoca[randomAudio]);
             audio.play();
         });
+
+        // Mostrar mensaje al hacer clic en el fondo
+        function showMessage() {
+            alert("OTTO");
+        }
     </script>
 
     <!-- Pie de página -->
     <footer>
         <p>&copy; 2024 ElperroVigués🐶</p>
     </footer>
-
-    <script src="./script.js"></script><!-- Lógica -->
 </body>
-
 </html>

@@ -2,7 +2,13 @@ const images = [
 	"http://www.aviationcorner.net/public/photos/0/8/avc_00628908.jpg",
 	"http://www.aviationcorner.net/public/photos/8/7/avc_00610387.jpg", 
     "http://www.aviationcorner.net/public/photos/5/4/avc_00606354.jpg",
-	"http://www.aviationcorner.net/public/photos/1/3/avc_00604913.jpg"
+	"http://www.aviationcorner.net/public/photos/1/3/avc_00604913.jpg",
+	"http://www.aviationcorner.net/public/photos/6/4/avc_00541764.jpg",
+	"http://www.aviationcorner.net/public/photos/9/4/avc_00541094.jpg", 
+	"http://www.aviationcorner.net/public/photos/3/9/avc_00540439.jpg",
+	"http://www.aviationcorner.net/public/photos/9/6/avc_00541896.jpg",
+	"http://www.aviationcorner.net/public/photos/7/5/avc_00541875.jpg",
+	"http://www.aviationcorner.net/public/photos/7/8/avc_00574978.jpg",
 ];
 
 const sonidosPino = [

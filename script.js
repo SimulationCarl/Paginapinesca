@@ -50,12 +50,3 @@ imagenFoca.addEventListener("click", () => {
 	const audio = new Audio(sonidosFoca[randomAudio]);
 	audio.play();
 });
-
-// Audios fumando porros gorgo
-const imagenFoca = document.getElementById("gorgo");
-imagenFoca.addEventListener("click", () => {
-	const randomAudio = Math.floor(Math.random() * sonidosgorgo.length);
-	const audio = new Audio(sonidosgorgo[randomAudio]);
-	audio.play();
-	
-});

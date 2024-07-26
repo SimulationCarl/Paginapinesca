@@ -129,7 +129,87 @@ footer: Pie de página
         <p>&copy;  ElperroVigués🐶</p>
     </footer>
 
-    <script src="./script.js"></script><!-- Lógica -->
-</body>
-
-</html>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio | El rincón del Perro Vigués</title>
+        <link rel="stylesheet" href="./style.css"><!-- Diseño -->
+    </head>
+    <body>
+        <!-- Cabecera -->
+        <header>
+            <h1>El Rincón del Perro Vigués🐶</h1>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Nosotros</a>
+                <a href="https://maps.app.goo.gl/PVRk8Ki3eNvv6tZJ8" target="_blank">Contacto</a>
+            </nav>
+        </header>
+    
+        <main>
+            <h2>Peña</h2>
+            <div id="gente">
+                <article>
+                    <a href="pino.html">
+                        <img src="imagenes/Pinoa150.jpg" alt="Pino">
+                    </a>
+                    <section>
+                        <h3>Pino</h3>
+                        <a href="pino.html"></a>
+                    </section>
+                </article>
+    
+                <article>
+                    <a href="javascript:void(0);" onclick="openRandomPage()">
+                        <img src="imagenes/Foca.jpg" alt="Mesto">
+                    </a>
+                    <section>
+                        <h3>Mesto</h3>
+                        <a href="javascript:void(0);" onclick="openRandomPage()"></a>
+                    </section>
+                </article>
+    
+                <article>
+                    <a href="garrima.html">
+                        <img src="imagenes/Garrima.jpg" alt="Garrima">
+                    </a>
+                    <section>
+                        <h3>Garrima</h3>
+                        <a href="garrima.html"></a> 
+                    </section> 
+                </article>
+    
+                <article>
+                    <a href="yeary.html">
+                        <img src="imagenes/yeary.png" alt="yeray">
+                    </a>
+                    <section>
+                        <h3>yeray</h3>
+                        <a href="yeary.html"></a>
+                    </section>
+                </article>
+    
+                <article>
+                    <a href="Elperro.html">
+                        <img src="imagenes/carglass.png" alt="Elperro">
+                    </a>
+                    <section>
+                        <h3>El perro Vigués🐶</h3>
+                        <a href="Elperro.html"></a>
+                    </section>
+                </article>
+            </div>
+        </main>
+    
+        <script>
+            function openRandomPage() {
+                var pages = ["mesto.html", "https://www.mcdonalds.es"];
+                var randomPage = pages[Math.floor(Math.random() * pages.length)];
+                window.open(randomPage,);
+            }
+        </script>
+    </body>
+    </html>
+    

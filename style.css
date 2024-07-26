@@ -56,8 +56,8 @@ img#pino,
 img#foca,
 img#garrima,
 img#yeary,
-img#gorgo
-img#Elperro
+img#gorgo,
+img#Elperro,
 img#clin,
 section#hobbies {
     width: 512px; /* with => con; width => ancho */
@@ -93,4 +93,7 @@ footer {
     text-align: center;
     padding: 1rem 0;
     width: 100%;
+}
+a {
+    color: crimson;
 }

@@ -22,6 +22,11 @@ const sonidosFoca = [
 	"audiosFoca/..."
 ];
 
+const sonidosgorgo = [
+	"fumo-porros-xokas.mp3"
+
+];
+
 // RandomIndex selecciona un número aleatorio (entre 0 y 1) y lo multiplica por la longitud del array de imágenes.
 // Math.floor redondea el número hacia abajo al entero más cercano para que 0,88 se convierta en 0.
 const randomImage = Math.floor(Math.random() * images.length);
@@ -44,4 +49,13 @@ imagenFoca.addEventListener("click", () => {
 	const randomAudio = Math.floor(Math.random() * sonidosFoca.length);
 	const audio = new Audio(sonidosFoca[randomAudio]);
 	audio.play();
+});
+
+// Audios fumando porros gorgo
+const imagenFoca = document.getElementById("gorgo");
+imagenFoca.addEventListener("click", () => {
+	const randomAudio = Math.floor(Math.random() * sonidosgorgo.length);
+	const audio = new Audio(sonidosgorgo[randomAudio]);
+	audio.play();
+	
 });

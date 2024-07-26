@@ -50,3 +50,5 @@ imagenFoca.addEventListener("click", () => {
 	const audio = new Audio(sonidosFoca[randomAudio]);
 	audio.play();
 });
+
+

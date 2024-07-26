@@ -30,7 +30,7 @@
         <div id="gente">
             <article>
                 <a id="pino" href="pino.html">
-                    <img src="imagenes/Pinoa150.jpg" alt="pino">
+                    <img src="imagenes/Pinoa150.jpg" alt="Pino">
                 </a>
                 <section>
                     <h3>Pino</h3>
@@ -78,13 +78,14 @@
                 </section>
             </article>
 
+            <!-- Añadido nuevo artículo para Gorgo -->
             <article>
-                <a href="gorgo.html">
-                    <img src="imagenes/gorgo.png" alt="gorgo">
+                <a id="gorgo" href="javascript:void(0);">
+                    <img src="imagenes/gorgo.png" alt="Gorgo">
                 </a>
                 <section>
                     <h3>Gorgo</h3>
-                    <a href="gorgo.png"></a>
+                    <a href="javascript:void(0);"></a>
                 </section>
             </article>
         </div>
@@ -118,6 +119,14 @@
             // Añade aquí los audios correspondientes para Foca
         ];
 
+        // Array de audios de Gorgo
+        const sonidosGorgo = [
+            "audiosGorgo/audio1.opus",
+            "audiosGorgo/audio2.opus",
+            "audiosGorgo/audio3.opus",
+            // Añade aquí los audios correspondientes para Gorgo
+        ];
+
         // Selección aleatoria de imagen de fondo
         const randomImage = Math.floor(Math.random() * images.length);
         const body = document.querySelector("body");
@@ -143,6 +152,14 @@
         imagenFoca.addEventListener("click", () => {
             const randomAudio = Math.floor(Math.random() * sonidosFoca.length);
             const audio = new Audio(sonidosFoca[randomAudio]);
+            audio.play();
+        });
+
+        // Reproducción de audio al hacer clic en la imagen de Gorgo
+        const imagenGorgo = document.getElementById("gorgo");
+        imagenGorgo.addEventListener("click", () => {
+            const randomAudio = Math.floor(Math.random() * sonidosgorgo.length);
+            const audio = new Audio(sonidosgorgo[fumo-porros-xokas.mp3]);
             audio.play();
         });
     </script>

@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
+
+<!--
+<elemento atributo="valor" otro="atributo">Contenido</elemento>
+
+head: Metadatos y enlaces a archivos externos (CSS, JavaScript)
+    meta: Metadatos (como el juego de caracteres o la descripción de la página)
+    link: Enlace a un archivo externo (como un archivo CSS)
+    title: Título de la página
+
+body: Contenido visible
+    header: Cabecera
+        h1: Título principal
+        nav: Navegación
+            a: Enlace
+    main: Contenido principal
+        section: Sección
+            h2: Título secundario
+            div: Contenedor
+    footer: Pie de página
+        p: Párrafo
+    script: JavaScript
+
+img: Imagen
+    alt: Texto alternativo (para personas con discapacidad visual)
+    id: Identificador (para CSS o JavaScript)
+a: Enlace
+    href: URL a la que lleva el enlace
+    target="_blank": Abre la URL en una nueva pestaña
+h1: Título principal (nivel 1)
+h2: Título secundario (nivel 2)
+h3: Título terciario (nivel 3)
+p: Párrafo
+nav: Navegación
+section: Sección
+
+header: Cabecera
+main: Contenido principal
+footer: Pie de página
+-->
+
+<!-- Metadatos para el navegador (UTF-8, que se vea bien en movil, título en la pestaña...)-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio | El rincón del Perro Vigués</title>
     <link rel="stylesheet" href="./style.css"><!-- Diseño -->
 </head>
+
+<!-- Lo que se ve -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | El rincón del Perro Vigués</title>
+    <link rel="stylesheet" href="./style.css"><!-- Diseño -->
+</head>
+
 <body>
     <!-- Cabecera -->
     <header>
@@ -31,12 +83,12 @@
             </article>
 
             <article>
-                <a href="javascript:void(0);" onclick="openRandomPage()">
+                <a href="mesto.html">
                     <img src="imagenes/Foca.jpg" alt="Mesto">
                 </a>
                 <section>
                     <h3>Mesto</h3>
-                    <a href="javascript:void(0);" onclick="openRandomPage()"></a>
+                    <a href="mesto.html"></a>
                 </section>
             </article>
 
@@ -71,7 +123,13 @@
             </article>
         </div>
     </main>
+    
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy;  ElperroVigués🐶</p>
+    </footer>
 
+    <script src="./script.js"></script><!-- Lógica -->
     <script>
         function openRandomPage() {
             var pages = ["mesto.html", "https://www.mcdonalds.es"];
@@ -80,4 +138,5 @@
         }
     </script>
 </body>
+
 </html>

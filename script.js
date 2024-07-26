@@ -8,7 +8,7 @@ const images = [
 	"http://www.aviationcorner.net/public/photos/3/9/avc_00540439.jpg",
 	"http://www.aviationcorner.net/public/photos/9/6/avc_00541896.jpg",
 	"http://www.aviationcorner.net/public/photos/7/5/avc_00541875.jpg",
-	"http://www.aviationcorner.net/public/photos/7/8/avc_00574978.jpg",
+	"http://www.aviationcorner.net/public/photos/7/8/avc_00574978.jpg"
 ];
 
 const sonidosPino = [
